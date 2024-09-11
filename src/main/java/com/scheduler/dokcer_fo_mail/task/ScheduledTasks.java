@@ -13,7 +13,7 @@ public class ScheduledTasks {
 	@Autowired
 	EmailSender email;
 
-	@Scheduled(fixedRate = 300000)
+	@Scheduled(fixedRate = 60000)
 	public void sendEmail() {
 		System.out.println("checking the scheduler");
 		try {
