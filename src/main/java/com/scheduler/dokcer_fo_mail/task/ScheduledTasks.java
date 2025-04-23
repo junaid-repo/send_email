@@ -10,18 +10,14 @@ import com.mailjet.client.errors.MailjetSocketTimeoutException;
 @Component
 public class ScheduledTasks {
 	
-	@Autowired
-	EmailSender email;
-
-	@Scheduled(fixedRate = 60000)
-	public void sendEmail() {
-		System.out.println("checking the scheduler");
-		try {
-			email.sendEmail("junaidraza3002@gmail.com", "checking", "junaid");
-		} catch (MailjetException | MailjetSocketTimeoutException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
+	/*
+	 * @Autowired EmailSender email;
+	 * 
+	 * @Scheduled(fixedRate = 60000) public void sendEmail() {
+	 * System.out.println("checking the scheduler"); try {
+	 * email.sendEmail("junaidraza3002@gmail.com", "checking", "junaid"); } catch
+	 * (MailjetException | MailjetSocketTimeoutException e) { // TODO Auto-generated
+	 * catch block e.printStackTrace(); } }
+	 */
 
 }
